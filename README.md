@@ -18,7 +18,8 @@ var dirs = require('export-dirs');
 
 When used in combination with [export-files], the files and directories in [fixtures](./fixtures) result in:
 
-```
+```js
+// all files and directories are flattened onto the `_` object
 { _:
    { z: [Function],
      y: [Function],
@@ -32,13 +33,17 @@ When used in combination with [export-files], the files and directories in [fixt
      c: [Function],
      b: [Function],
      a: [Function] },
+  // files in the same directory as export-dirs
   z: [Function],
   y: [Function],
   x: [Function],
+  // folders in the same directory as export-dirs
   two: { f: [Function], e: [Function], d: [Function] },
   three: { i: [Function], h: [Function], g: [Function] },
   one: { c: [Function], b: [Function], a: [Function] } }
 ```
+
+_(Note that export-dirs does not recurse)_.
 
 ## Related projects
 * [to-exports](https://github.com/jonschlinkert/to-exports): Create exports from a directory of non-javascript or javascript files.
