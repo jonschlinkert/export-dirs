@@ -1,7 +1,7 @@
 {
   "name": "export-dirs",
   "description": "Export directories and their files as node.js modules.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "https://github.com/jonschlinkert/export-dirs",
   "author": {
     "name": "Jon Schlinkert",
@@ -28,10 +28,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "dependencies": {
-    "export-files": "^2.0.1"
-  },
   "devDependencies": {
+    "export-files": "^2.0.1",
     "mocha": "*",
     "should": "*"
   },
