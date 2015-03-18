@@ -37,7 +37,6 @@ module.exports = function exportDirs(dir) {
       res[name] = res._[name] = require(fp);
     }
   }
-  console.log(res)
   return res;
 };
 
